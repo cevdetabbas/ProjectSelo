@@ -2,13 +2,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CreatingFirstSeleniumObject
+public class S2_SeleniumWithoutWebDriver
 {
     public static void main(String[] args)
     {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
 
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
 
 
     }
