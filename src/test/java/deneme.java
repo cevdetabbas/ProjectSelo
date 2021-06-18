@@ -1,27 +1,22 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 
 public class deneme
 {
-    public static void main(String[] args) throws InterruptedException
+    @Test
+    public void t1()
     {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
-        Thread.sleep(3000);
-        List<WebElement> inputboxes = driver.findElements(By.xpath("//input"));
-        Thread.sleep(3000);
 
-        for (WebElement each : inputboxes)
-        {
-            Thread.sleep(3000);
-            each.sendKeys("kamil");
-
-        }
     }
 }

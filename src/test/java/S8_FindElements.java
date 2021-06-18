@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class J8_FindElements
+public class S8_FindElements
 {
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
